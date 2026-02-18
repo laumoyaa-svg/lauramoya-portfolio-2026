@@ -35,14 +35,12 @@
    while the hero content remains on top. */
 .hero-image {
     position: absolute;
-    inset: 0;
-    width: 100%;
+    width: auto;
     height: 100%;
     object-fit: contain; /*cover*/
     object-position: top center;
     background-color: var(--color-bg);
     display: block;
-    z-index: 1;
     pointer-events: none;
     transform: scale(var(--hero-image-scale));
     transform-origin: top center;
