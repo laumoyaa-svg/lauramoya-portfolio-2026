@@ -1,3 +1,4 @@
+
 /* ============================================
    MODULE: _components.css
    ============================================
@@ -8,24 +9,68 @@
    ============================================ */
 
 /* ===== HEADER & NAVIGATION ===== */
-header {
-	background-color: var(--color-bg-light);
+/* ===== HEADER SECTION ===== */
+.site-header {
+	background-color: transparent;
 	padding: var(--space-lg) 0;
-	border-bottom: 1px solid var(--color-border-light);
+	/*border-bottom: 1px solid var(--color-border-light);*/
 	position: sticky;
 	top: 0;
 	z-index: var(--z-sticky);
-	backdrop-filter: blur(10px);
+
 }
 
-.dark-mode header {
+.dark-mode .site-header {
 	background-color: rgba(30, 41, 59, 0.9);
 }
 
-header .container {
+.header-container {
 	display: flex;
-	justify-content: space-between;
 	align-items: center;
+	justify-content: space-between;
+	flex-wrap: wrap;
+	gap: var(--space-md);
+	padding: 0 var(--container-padding-narrow);
+	/*background-color: var(--color-bg);*/
+}
+
+.site-header .header-title {
+	font-family: var(--font-family-base);
+	margin: 0;
+	font-size: var(--font-size-sm);
+	color: var(--color-text-accent) !important;
+}
+
+.header-nav .nav-list {
+	display: flex;
+	gap: 3rem;
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	justify-content: center;
+	width: 100%;
+}
+
+.header-nav .menu-item {
+	color: var(--color-text-primary);
+	font-family: var(--font-family-base);
+	font-weight: var(--font-weight-bold);
+	font-size: var(--font-size-sm);
+	padding: var(--space-sm) var(--space-md);
+	border-radius: var(--radius-md);
+	transition: all var(--transition-fast);
+	text-decoration: none;
+}
+
+.header-nav .menu-item:hover {
+	color: var(--color-text-accent);
+	background-color: var(--color-primary-hover);
+	text-decoration: none;
+}
+
+.header-nav .menu-item.active {
+	color: var(--color-primary);
+	background-color: var(--color-bg-light);
 }
 
 nav ul {

@@ -7,6 +7,7 @@
    Uses Intersection Observer for performance.
    ============================================ */
 
+
 /* ===== HERO SECTION ===== */
 .hero {
     min-height: 100vh;
@@ -14,8 +15,6 @@
     align-items: center;
     justify-content: center;
     position: relative;
-    /* allow easy manual scaling: edit this value to shrink/grow the hero image */
-    --hero-image-scale: 1.2;
     background-color: var(--color-bg);
     text-align: center;
     padding: 0;
@@ -35,15 +34,20 @@
    while the hero content remains on top. */
 .hero-image {
     position: absolute;
-    width: auto;
-    height: 100%;
-    object-fit: contain; /*cover*/
+    width: 84%;
+    height: auto;
+    object-fit: cover; /*contain to show entire image   */
     object-position: top center;
-    background-color: var(--color-bg);
     display: block;
     pointer-events: none;
-    transform: scale(var(--hero-image-scale));
-    transform-origin: top center;
+    /*TODO: understand mask behaviour*/
+    -webkit-mask-image: radial-gradient(ellipse at center, #000 10%, transparent 100%);
+    mask-image: radial-gradient(ellipse at center, #000 90%, transparent 100%);
+     transform: translateY(-50px);
+    /* allow easy manual scaling: edit this value to shrink/grow the hero image 
+    transform: scale(1);
+    transform-origin: top center;*/
+    /*background-color: var(--color-bg);*/
 }
 
 .hero > div {
@@ -81,7 +85,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: var(--space-4xl) var(--space-2xl);
+    padding: var(--space-2xl) var(--space-2xl);
     position: relative;
     opacity: 0;
     transform: translateY(50px);
@@ -99,20 +103,56 @@
     position: relative;
 }
 
+/* About row: image (40%) + text (60%), centered vertically */
+.about-row {
+	display: grid;
+	grid-template-columns: 40% 1fr;
+	gap: var(--space-4xl);
+	align-items: center;
+	margin: var(--space-lg) 0;
+}
+
+.about-image img {
+	width: 100%;
+	height: auto;
+	display: block;
+	border-radius: var(--radius-full);
+	object-fit: cover;
+}
+
+.about-text .text-large {
+	margin: 0 0 var(--space-md);
+}
+
+.about-text .text-large:last-child {
+	margin-bottom: 0;
+}
+
+@media (max-width: 768px) {
+	.about-row {
+		grid-template-columns: 1fr;
+	}
+	.about-image img { height: 300px; }
+}
+
 .text-large {
-    font-size: var(--font-size-xl);
-    line-height: var(--line-height-relaxed);
+	font-size: var(--font-size-base);
+	line-height: var(--line-height-relaxed);
+	font-family: var(--font-family-base);
+	color: var(--color-text-primary);
 }
 
 /* ===== CHAPTER THEMES ===== */
 .chapter-1 {
-    background: var(--gradient-chapter-1);
+    /*background: var(--gradient-chapter-1);*/
+    /*background: var(--color-bg-secondary);*/
+    background: var(--gradient-white-light-purple);
 }
 
 .chapter-1 h2 {
-    color: var(--color-accent-blue);
+    color: var(--color-text-accent);
     font-size: var(--font-size-3xl);
-    margin-bottom: var(--space-md);
+    margin-bottom: var(--space-xl);
 }
 
 .chapter-2 {
@@ -326,7 +366,7 @@
     flex-direction: column;   /* !! IMPORTANT */
     align-items: center;
     justify-content: center;
-    background: var(--gradient-hero);
+    background: var(--my-gradient);
     text-align: center;
     padding: var(--space-2xl);
 }

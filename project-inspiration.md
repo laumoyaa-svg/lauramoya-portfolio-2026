@@ -1,36 +1,6 @@
-# Project Inspiration - Ilustración & Scrollytelling
+# Project Inspiration
 
-## 🎨 Mis Referencias Visuales
-
-### Portfolio de Ilustradores (Scrollytelling)
-
-<!-- Añade aquí los portfolios que te inspiran -->
-<!-- Formato: [Nombre](URL) - Qué te gusta de este portfolio -->
-
-1. [Nombre ilustrador](URL) - _Qué me inspira: [...]_
-2. [Nombre ilustrador](URL) - _Qué me inspira: [...]_
-3. [Nombre ilustrador](URL) - _Qué me inspira: [...]_
-
-### Capturas de Inspiración
-
-Guarda screenshots en `/images/inspiration/` de:
-- Layouts que te gustan
-- Combinaciones de color
-- Estilos tipográficos
-- Animaciones interesantes
-
----
-
-## 📐 Tendencias de Diseño Web para Portfolios (2025)
-
-### 1. Scrollytelling & Narrativa Progresiva
-- **Descripción:** Historias que se despliegan mientras scrolleas
-- **Por qué funciona:** Mantiene atención, guía al usuario, crea experiencia memorable
-- **Ejemplo en tu template:** Hero → Chapters → Timeline → CTA
-
-### 2. Minimalismo con Toques de Color
-- **Descripción:** Espacios limpios con acentos de color estratégicos
-- **Aplicación:** Fondos neutros, color en CTAs y elementos clave
+## Tendencias Destacadas en Diseño Web (2025)
 
 ### 1. Brutalismo & Neo-Brutalismo
 - **Descripción:** Estética cruda y directa, tipografía llamativa, contraste fuerte, elementos sin pulir.
@@ -171,49 +141,48 @@ Create a folder in your project: `/images/inspiration/` and save screenshots of:
 ### Core Concept
 
 **What is your project about?**
-_Example: A portfolio showcasing my graphic design work with a focus on sustainability and eco-friendly branding._
-
-[Write your project's core concept here—1-2 sentences]
+A portfolio website highlighting my most recent work in the two of the three categories that I normally divide my portfolio in: Children's illustration Tradicional Drawing & Illustration as a tool to enhance and support Education
 
 ---
 
 ### Target Audience
 
 **Who is this for?**
-_Example: Potential clients looking for a designer who specializes in environmental brands, and recruiters from design agencies._
+Publishing houses and editorial clients, especially those working with children’s illustration, books and narrative visual content.
 
-[Describe your target audience]
+Cultural organisations, museums, heritage projects and creative institutions that need illustration to communicate stories, knowledge and cultural information.
+
+Clients interested in traditional and analogue illustration, particularly for travel-related storytelling, heritage documentation and observational drawing using watercolour and pencil techniques.
 
 ---
 
 ### Key Message
 
 **What do you want visitors to feel/understand?**
-_Example: I want them to see me as a thoughtful, detail-oriented designer who cares about making a positive impact through design._
-
-[Your key message]
+Provide clear tab-based navigation instead of long scrolling pages, maintain clean and breathable layouts with strong visual hierarchy, ensure accessible colour contrast and readable typography, and create a calm, easy-to-understand browsing experience.
+Prioritise clarity, accessibility and fast content recognition over visual complexity.
 
 ---
 
 ### Visual Direction
 
 **What aesthetic/mood are you going for?**
-_Example: Clean, modern, with earthy tones (greens, browns, off-white). Lots of whitespace, organic shapes, and subtle animations._
 
-[Describe your visual direction]
+Visually, the aesthetic should be clean, organic and easy to navigate. The colour palette should be based on pale beige or off-white backgrounds, combined with one strong accent colour to create contrast and visual focus. 
+
+The overall tone should feel calm, welcoming and joyful yet professional and not overly playful or decorative
 
 ---
 
 ### Technical Goals
 
 **What do you want to learn/demonstrate?**
-_Example: Master CSS Grid for complex layouts, implement smooth scroll animations, achieve 95+ Lighthouse scores, ensure WCAG AA accessibility._
 
-- [ ] Goal 1: [e.g., Responsive design with CSS Grid]
-- [ ] Goal 2: [e.g., Accessible navigation with ARIA]
-- [ ] Goal 3: [e.g., Optimized images and lazy loading]
-- [ ] Goal 4: [e.g., Dark mode toggle]
-- [ ] Goal 5: [e.g., Smooth scroll animations]
+- [X] Goal 1: [Responsive layout using CSS Grid and Flexbox to ensure consistent display across desktop, tablet and mobile devices]
+- [X] Goal 2: [Accessible navigation structure with clear hierarchy, readable typography and sufficient colour contrast]
+- [X] Goal 3: [Optimized illustration images (proper sizing, compression and modern formats where possible)]
+- [X] Goal 4: [Clear tab-based navigation instead of long scrolling layouts]
+- [X] Goal 5: [emantic HTML structure for accessibility and SEO]
 
 ---
 

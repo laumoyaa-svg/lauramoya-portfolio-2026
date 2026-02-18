@@ -7,18 +7,36 @@
 			name="description"
 			content="Portfolio de ilustración - WEB ATELIER (UDIT) - Historias que se despliegan mientras scrolleas" />
 		<meta name="author" content="[Tu Nombre]" />
-		<title>Mi Portfolio - WEB ATELIER (UDIT)</title>
+		<title>Laura Moya Portfolio</title>
+				<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Comfortaa:wght@300..700&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+		<link rel="stylesheet" href="./assets/css/style.css" />
+
 		<link rel="stylesheet" href="./assets/css/style.css" />
 	</head>
 	<body>
 		<a href="#main" class="skip-link">Saltar al contenido</a>
+
+		<!-- Header Section -->
+		<header class="site-header">
+			<div class="header-container">
+				<h4 class="header-title">Laura Moya</h4>
+				<nav class="header-nav">
+					<ul class="nav-list">
+						<li><a href="#about" class="menu-item menu-item-about">ABOUT</a></li>
+						<li><a href="#projects" class="menu-item menu-item-projects">PROJECTS</a></li>
+						<li><a href="#contact" class="menu-item menu-item-contact">CONTACT</a></li>
+					</ul>
+				</nav>
+			</div>
+		</header>
 
 		<!-- Hero Section -->
 		<div class="hero">
 			<!--<img class="hero-image" src="https://ik.imagekit.io/lauramoya/images/fluffybath_mask.webp?updatedAt=1770654830381" alt="Fluffybath illustration" />-->
 			<img
 				class="hero-image"
-				src="https://ik.imagekit.io/lauramoya/images/fluffybath_mask.webp?updatedAt=1770654830381"
+				src="https://ik.imagekit.io/lauramoya/images/fluffyJanuary.webp?updatedAt=1771454194051"
 				alt="Ilustración de portada" />
 		</div>
 
@@ -26,33 +44,21 @@
 		<main id="main">
 
 			<!-- Chapter 1: About Me -->
-			<section class="story-section chapter-1" data-observe>
+			
+			<section id="about" class="story-section chapter-1" data-observe>
 				<div class="story-content">
-					<h2>Sobre Mí</h2>
-					<p class="text-large">
-						Soy ilustrador/a especializado en [tu especialización]. Mi trabajo explora [tu visión artística], combinando
-						técnicas tradicionales con herramientas digitales.
-					</p>
-
-					<div class="stat-display">
-						<div class="stat-item">
-							<span class="stat-number">3+</span>
-							<span class="stat-label">Años de Experiencia</span>
+					<h2>About</h2>
+					<div class="about-row">
+						<div class="about-image">
+							<img src="https://ik.imagekit.io/lauramoya/images/lauraFernandezMoya.webp?updatedAt=1770987704493" alt="Laura Fernandez Moya">
 						</div>
-						<div class="stat-item">
-							<span class="stat-number">50+</span>
-							<span class="stat-label">Proyectos Completados</span>
-						</div>
-						<div class="stat-item">
-							<span class="stat-number">10+</span>
-							<span class="stat-label">Clientes Satisfechos</span>
+						<div class="about-text">
+							<p class="text-large">As an illustrator, I love to express ideas, emotions and everyday stories through my characters.</p>
+							<p class="text-large">I work across editorial and educational projects, turning information into visual stories that support learning and understanding.</p>
+							<p class="text-large">I adapt the style and techniques to the audience and purpose of each project.</p>
 						</div>
 					</div>
 
-					<p>
-						Creo que cada ilustración cuenta una historia. Mi proceso comienza con la investigación y exploración conceptual,
-						seguido de bocetos y refinamiento iterativo hasta lograr la pieza final.
-					</p>
 				</div>
 			</section>
 
@@ -65,7 +71,7 @@
 			</div>
 
 			<!-- Chapter 2: My Work -->
-			<section class="story-section chapter-2" data-observe>
+			<section id="projects" class="story-section chapter-2" data-observe>
 				<div class="story-content">
 					<h2>Mi Trabajo</h2>
 					<p class="text-large mb-lg">Me especializo en varias áreas de ilustración:</p>
@@ -145,32 +151,32 @@
 			</section>
 
 			<!-- Final CTA Section (now contains contact area) -->
-<section class="final-section">
-	<h2> Contact </h2>
-  <div class="contact-container">
+			<section id="contact" class="final-section">
+				<h2> Contact </h2>
+			<div class="contact-container">
 
-    <!-- LEFT COLUMN -->
-    <div class="contact-left">
+				<!-- LEFT COLUMN -->
+				<div class="contact-left">
 
-		<div class="contact-text-block">
-			<h5>Let's have a chat!</h5>
+					<div class="contact-text-block">
+						<h5>Let's have a chat!</h5>
 
-			<div class="contact-row">
-				<div class="contact-icon">✉</div>
-				<a class="contact-email" href="mailto:hello@email.com">
-				hello@email.com
-				</a>
-			</div>
-		</div>
-		
+						<div class="contact-row">
+							<div class="contact-icon">✉</div>
+							<a class="contact-email" href="mailto:hello@email.com">
+							hello@email.com
+							</a>
+						</div>
+					</div>
+					
 
-      <img 
-        class="contact-image"
-        src="https://ik.imagekit.io/lauramoya/images/cutiewithcoffee.webp"
-        alt="Contact illustration"
-      />
+				<img 
+					class="contact-image"
+					src="https://ik.imagekit.io/lauramoya/images/cutiewithcoffee.webp"
+					alt="Contact illustration"
+				/>
 
-    </div>
+				</div>
 
     <!-- RIGHT COLUMN -->
     <div class="contact-right">

@@ -1,274 +1,152 @@
-# Portfolio Brief - Ilustración Aplicada
+# Project Brief
 
-**Estudiante:** [Tu Nombre]  
-**Handle:** @[tu-github-username]  
-**Curso:** WEB ATELIER (UDIT) · Ilustración Aplicada: Productos Digitales Web-App  
-**Fecha actualización:** [Última actualización]
-
----
-
-## 📋 Concepto del Portfolio
-
-### ¿Qué estás construyendo?
-
-<!-- Describe tu portfolio en 2-3 frases -->
-_Ejemplo: Un portfolio scrollytelling que muestra mi trabajo de ilustración editorial y branding. Cada sección se revela progresivamente mientras el usuario navega, creando una experiencia narrativa inmersiva._
+**Student:** Laura Fernandez de Moya 
+**Handle:** @@laumoyaa-svg  
+**Course:** Web Design 2026 · Winter  
+**Date:** 02/02/2026
 
 ---
 
-### ¿Para quién es?
+## Project Concept
 
-<!-- Define tu audiencia objetivo -->
-_Ejemplo: Directores de arte, editores, clientes potenciales en el sector editorial y agencias creativas interesadas en ilustración con enfoque conceptual._
+### What are you building?
+<!-- Describe your project in 2-3 sentences -->
+A portfolio website highlighting my most recent work in the two of the three categories that I normally divide my portfolio in: Editorial and Educational.
 
----
+### Who is it for?
+<!-- Define your target audience -->
+Publishing houses and editorial clients, especially those working with children’s illustration and using the illustration as a method to explore and understand concepts.
 
-### ¿Por qué importa?
+Cultural organisations, museums, heritage projects and creative or scientific institutions that need illustration as a tool to cultivate knowledge.
 
-<!-- Explica el propósito y valor -->
-_Ejemplo: Necesito una presencia digital profesional que no solo muestre mi trabajo, sino que comunique mi proceso creativo y filosofía de diseño de forma memorable._
+Clients interested in traditional and analogue illustration, such as watercolour and pencil techniques.
 
----
+### Why does it matter?
 
-## 🎨 Identidad Visual
+<!-- Explain the purpose and value of your project -->
 
-### Estilo Visual Principal
-
-<!-- Describe tu estética -->
-_Ejemplo: Minimalista con toques de color vibrante, mucho espacio en blanco, tipografía sans-serif limpia con detalles serif para títulos. Inspirado en revistas de diseño contemporáneo._
-
-**Palabras clave:** [Lista 3-5 palabras que describen tu estilo]
-- Ejemplo: Limpio, Vibrante, Conceptual, Contemporáneo, Accesible
+The website clearly presents my work so potential clients can quickly understand what type of illustration I create, how it can be applied to their projects and which areas I specialise in. The structure helps visitors navigate different types of work and identify relevant examples efficiently.
 
 ---
 
-### Paleta de Colores
+## Technical Approach
 
-**Color Primario:** `#[hex]` - [Nombre/uso]  
-**Color Secundario:** `#[hex]` - [Nombre/uso]  
-**Acento 1:** `#[hex]` - [Para qué secciones]  
-**Acento 2:** `#[hex]` - [Para qué elementos]  
-**Acento 3:** `#[hex]` - [Contexto de uso]
+### Core Technologies
 
-**Verificación de contraste:**
-- [ ] Texto sobre fondo cumple WCAG AA (4.5:1)
-- [ ] UI elements cumplen 3:1
-- [ ] Probado con WebAIM Contrast Checker
+- [X] HTML5 (semantic markup)
+- [X] CSS3 (responsive design)
+- [X] JavaScript (if applicable)
+- [ ] Other: ****\_\_\_****
 
----
+### Accessibility Goals
 
-### Tipografías
+- [X] Semantic HTML structure
+- [X] Proper heading hierarchy
+- [X] Alt text for images
+- [X] Keyboard navigation support
+- [X] Color contrast compliance
+- [X] Screen reader compatibility
 
-**Para Títulos/Headings:**
-- Fuente: [Nombre de Google Font]
-- Peso: [ej. 700 Bold]
-- Uso: h1, h2, h3, hero title
+### Responsive Design Strategy
 
-**Para Texto/Body:**
-- Fuente: [Nombre de Google Font]
-- Peso: [ej. 400 Regular, 600 Semibold]
-- Uso: párrafos, descripciones, labels
-
-**URLs de Google Fonts:**
-```
-[Pega aquí los enlaces completos de Google Fonts]
-```
+- [X] Desktop-first approach
+- [X] Flexible grid system
+- [X] Scalable typography
+- [X] Optimized images
+- [ ] Touch-friendly interactions
 
 ---
 
-## 📝 Contenidos Preparados
+## Content Strategy
 
-### Bio y Statement
+### Key Sections/Pages
 
-**Bio Corta (2-3 párrafos):**
-<!-- Pega tu bio aquí -->
+1. Proyectos
+    1. Ilustración Infantil y Editorial
+    2. Viaje y Tradición
+2. Sobre mí 
+3. Contacto
 
-**Artist Statement (opcional, 1 párrafo):**
-<!-- Tu declaración artística -->
+### Content Sources
+<!-- Where will your content come from? -->
+My own digital and analogue work.
 
-**Lema/Tagline para Hero:**
-<!-- 1 frase impactante que te define -->
-_Ejemplo: "Creando narrativas visuales que conectan emociones"_
+### Multilingual Considerations
 
----
-
-### Estadísticas Personales
-
-Para la sección "About" (Statistics Display):
-
-1. **[Número]+ [Label]**  
-   _Ejemplo: 3+ Años de Experiencia_
-
-2. **[Número]+ [Label]**  
-   _Ejemplo: 50+ Proyectos Completados_
-
-3. **[Número]+ [Label]**  
-   _Ejemplo: 10+ Clientes Satisfechos_
+- Primary language: Spanish
+- Secondary language (optional): English
+- Translation strategy: Manual
 
 ---
 
-### Áreas de Especialización
+## Design Direction
 
-Para la sección "My Work" (3 cards):
+### Visual Style
 
-#### Especialidad 1
-- **Título:** [ej. Ilustración Editorial]
-- **Descripción (1-2 frases):** [Qué haces en esta área]
+<!-- Describe your aesthetic approach -->
+Visually, the aesthetic should be clean, organic and easy to navigate. The colour palette should be based on pale beige or off-white backgrounds, combined with one strong accent colour to create contrast and visual focus. 
 
-#### Especialidad 2
-- **Título:** [ej. Branding & Identidad]
-- **Descripción:** [...]
+The overall tone should feel calm, welcoming and joyful yet professional and not overly playful or decorative
 
-#### Especialidad 3
-- **Título:** [ej. Arte Digital]
-- **Descripción:** [...]
+### Color Palette
 
----
+<!-- List your main colors -->
+#fdf6f1 <!-- Background --> <!-- lighter:faf6f3 darker: #F4F0E8 -->
+#131313 <!-- Texts -->
+#de4524 <!-- Titles, Accent colour. Alternative: #D2553D -->
+#eee3fc <!-- Support colour -->
+<!-- #d4eadb alternative to purple: sage. Darker: #C7D6CC -->
 
-### Proceso Creativo
+### Typography
 
-Para la sección Timeline (3 pasos):
+<!-- What fonts/typeface approach will you use? -->
+<!-- Work Sans: Main Titles & also copy text -->
+<!-- Caveat: Hand drawn, italic. Captions and secondary Titles -->
+<link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 
-#### Paso 1
-- **Título:** [ej. Investigación y Concepto]
-- **Descripción:** [Qué haces en esta fase]
+### Inspiration/References
 
-#### Paso 2
-- **Título:** [ej. Bocetos y Exploración]
-- **Descripción:** [...]
+<!-- List 2-3 websites or designs that inspire your approach -->
+<!-- Preferred -->
+https://visualmateria.com/ <!-- colour palette, interactive but not overwhelming -->
+https://www.junedigann.com/ <!-- layout, background images, easy to navigate -->
+https://www.malikafavre.com/ <!-- designed, I love the lips logo-->
 
-#### Paso 3
-- **Título:** [ej. Refinamiento y Entrega]
-- **Descripción:** [...]
-
----
-
-### Herramientas y Skills
-
-Para la sección Skills (3 cards):
-
-**Card 1 - Herramientas Digitales:**
-- [Herramienta 1]
-- [Herramienta 2]
-- [Herramienta 3]
-- [Herramienta 4]
-
-**Card 2 - Técnicas Tradicionales:**
-- [Técnica 1]
-- [Técnica 2]
-- [Técnica 3]
-- [Técnica 4]
-
-**Card 3 - Especialidades:**
-- [Skill 1]
-- [Skill 2]
-- [Skill 3]
-- [Skill 4]
+<!-- Other inspiration website -->
+https://www.thebeastisback.com/ <!-- playful, but organised (except shop) -->
+https://www.wildishandco.co.uk/ <!-- moving elements. A bit too much but I like some of it -->
+https://civicwise.org/ <!-- modern, but more for graphic design -->
 
 ---
 
-## 🖼️ Proyectos para Galería
+## Success Metrics
 
-### Proyecto 1
-- **Imagen ImageKit:** [URL completa]
-- **Título:** [Nombre del proyecto]
-- **Descripción:** [1 frase]
-- **Categoría:** [Editorial/Digital/Branding/etc]
-- **Alt Text:** [Descripción accesible para screen readers]
+### Week 4 Goals
 
-### Proyecto 2
-[Repetir estructura]
+- [ ] Functional homepage
+- [ ] Basic responsive layout
+- [ ] Core content in place
+- [ ] Accessible markup
 
-### Proyecto 3
-[Repetir estructura]
+### Final Project Goals
 
-<!-- Añadir mínimo 6 proyectos -->
-
-**Optimización ImageKit:**
-- [ ] URLs con transformaciones: `tr:w-400,h-300,q-80,f-auto`
-- [ ] Imágenes full-size para lightbox: `tr:w-1200`
-- [ ] Alt text descriptivo en todos
+- [ ] Fully responsive across devices
+- [ ] Meets WCAG 2.1 AA standards
+- [ ] Fast loading performance
+- [ ] Complete content
+- [ ] Polished visual design
 
 ---
 
-## 📞 Información de Contacto
+## Reflection Questions
 
-**Email:** [tu@email.com]
+### What excites you most about this project?
 
-**Redes Sociales:**
-- Instagram: [URL]
-- Behance: [URL]
-- LinkedIn: [URL]
-- Twitter/X: [URL] (opcional)
-- Otras: [URL]
+### What challenges do you anticipate?
 
-**CTA Final:**
-<!-- Mensaje para la sección Final CTA -->
-_Ejemplo: "¿Tienes un proyecto en mente? Me encantaría colaborar contigo."_
+### How does this project connect to your learning goals?
 
 ---
 
-## 🎯 Objetivos Técnicos
-
-### Sesión 3 (S3)
-- [ ] Sistema de diseño personalizado (colores + fuentes)
-- [ ] Hero con contenido propio
-- [ ] About con bio y estadísticas reales
-- [ ] Work con especialidades definidas
-- [ ] Timeline con proceso documentado
-- [ ] Skills con herramientas actuales
-- [ ] Responsive verificado (320px-1440px)
-- [ ] Accesibilidad WCAG AA
-
-### Sesión 4 (S4)
-- [ ] Galería con mínimo 6 proyectos (ImageKit)
-- [ ] Lightbox funcional (opcional)
-- [ ] UX testing con compañero completado
-- [ ] Mejoras basadas en feedback implementadas
-- [ ] Meta tags Open Graph
-- [ ] Case study documentado
-- [ ] Portfolio lanzado y público
-
----
-
-## 📊 Métricas de Éxito
-
-**Performance:**
-- [ ] Lighthouse Performance > 80
-- [ ] First Contentful Paint < 2s
-- [ ] Imágenes optimizadas con ImageKit
-
-**Accesibilidad:**
-- [ ] Lighthouse Accessibility 100
-- [ ] Contraste WCAG AA verificado
-- [ ] Navegación por teclado funcional
-- [ ] Reduced motion respetado
-
-**SEO:**
-- [ ] Title y description únicos
-- [ ] Open Graph meta tags
-- [ ] Alt text en todas las imágenes
-
----
-
-## 💭 Reflexión
-
-### ¿Qué te emociona más de este portfolio?
-
-### ¿Qué desafíos anticipas?
-
-### ¿Cómo conecta con tus objetivos profesionales?
-
----
-
-## 📅 Historial de Actualizaciones
-
-- **[Fecha]:** Creación inicial del brief
-- **[Fecha]:** Definida paleta de colores y tipografías
-- **[Fecha]:** Contenidos preparados (bio, stats, especialidades)
-- **[Fecha]:** Proyectos para galería organizados
-- **[Fecha]:** Portfolio lanzado
-
----
-
-_Este brief es tu fuente de verdad para los prompts IA. Mantén este archivo actualizado y referéncialo en cada prompt con: "Ver contenidos preparados en project-brief.md"_
+_This brief will evolve as your project develops. Update it as needed and reference it in your weekly commits._
