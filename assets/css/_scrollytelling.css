@@ -114,7 +114,7 @@
 	grid-template-columns: 40% 1fr;
 	gap: var(--space-4xl);
 	align-items: center;
-	margin: var(--space-lg) 0;
+    margin-bottom: var(--space-4xl);
 }
 
 .about-image img {
@@ -150,14 +150,13 @@
 /* ===== CHAPTER THEMES ===== */
 .chapter-1 {
     padding-top: 0;
-    /*background: var(--color-bg-secondary);*/
     background: var(--gradient-white-light-purple);
 }
 
 .chapter-1 h2 {
     color: var(--color-text-accent);
     font-size: var(--font-size-3xl);
-    margin-bottom: var(--space-xl);
+    margin-bottom: var(--space-4xl);
 }
 
 .chapter-2 {
@@ -376,11 +375,6 @@
     padding: var(--space-2xl);
 }
 
-/*.final-section h2 {
-    font-size: var(--font-size-2xl);
-    margin-bottom: var(--space-4xl);
-}*/
-
 .chapter-contact {
     background: var(--color-light-purple);
 }
@@ -463,6 +457,7 @@
   gap: var(--space-lg)
 }
 
+/*TODO: change for variables*/
 .contact-form input,
 .contact-form textarea {
   border: none;
@@ -487,13 +482,7 @@
     }
 }
 
-.final-content p {
-    font-size: var(--font-size-lg);
-    color: rgba(255, 255, 255, 0.9);
-    max-width: 600px;
-    margin: 0 auto var(--space-xl);
-}
-
+/*TODO: change for variables in all .cta sections*/
 .cta-button {
   width: fit-content;
   padding: 0.9rem 2.5rem;
