@@ -62,6 +62,25 @@ window.addEventListener('scroll', updateScrollProgress);
 // Initialize on page load
 updateScrollProgress();
 
+// ===== HEADER BACKGROUND TOGGLE =====
+// Transparent at top, solid background from #about downward
+
+function updateHeaderBackground() {
+	const header = document.querySelector('.site-header');
+	const aboutSection = document.getElementById('about');
+	if (!header || !aboutSection) return;
+
+	const triggerPoint = aboutSection.offsetTop - header.offsetHeight;
+	if (window.scrollY >= triggerPoint) {
+		header.classList.add('site-header--solid');
+	} else {
+		header.classList.remove('site-header--solid');
+	}
+}
+
+window.addEventListener('scroll', updateHeaderBackground);
+updateHeaderBackground();
+
 // ===== SCROLL TO TOP FUNCTION =====
 // PEDAGOGICAL NOTE: Smooth scroll to top for better UX
 
