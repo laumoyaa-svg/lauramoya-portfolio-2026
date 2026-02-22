@@ -1,4 +1,5 @@
 
+
 /* ============================================
    MODULE: _scrollytelling.css
    ============================================
@@ -85,7 +86,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: var(--space-2xl) var(--space-2xl);
+    padding: 0 var(--space-2xl);
     position: relative;
     opacity: 0;
     transform: translateY(50px);
@@ -101,6 +102,10 @@
     max-width: 800px;
     z-index: var(--z-base);
     position: relative;
+}
+
+.story-content > h2 {
+    margin-top: var(--space-3xl);
 }
 
 /* About row: image (40%) + text (60%), centered vertically */
@@ -144,7 +149,7 @@
 
 /* ===== CHAPTER THEMES ===== */
 .chapter-1 {
-    /*background: var(--gradient-chapter-1);*/
+    padding-top: 0;
     /*background: var(--color-bg-secondary);*/
     background: var(--gradient-white-light-purple);
 }
@@ -166,7 +171,7 @@
 }
 
 .chapter-3 {
-    background: var(--gradient-chapter-3);
+    background: var(--color-accent-green);
 }
 
 .chapter-3 h2 {
@@ -366,14 +371,25 @@
     flex-direction: column;   /* !! IMPORTANT */
     align-items: center;
     justify-content: center;
-    background: var(--my-gradient);
+    background: var(--color-light-purple);
     text-align: center;
     padding: var(--space-2xl);
 }
 
-.final-section h2 {
+/*.final-section h2 {
     font-size: var(--font-size-2xl);
     margin-bottom: var(--space-4xl);
+}*/
+
+.chapter-contact {
+    background: var(--color-light-purple);
+}
+
+.chapter-contact h2 {
+    color: var(--color-text-accent);
+    font-size: var(--font-size-3xl);
+    margin-bottom: var(--space-4xl);
+    text-align: center;
 }
 
 .contact-container {
@@ -394,6 +410,7 @@
 
 .contact-text-block {
   width: fit-content;
+  margin-bottom: var(--space-2xl);
 }
 
 .contact-row {
@@ -406,9 +423,16 @@
   font-size: var(--space-lg);
 }
 
+
 .contact-email {
-  font-weight: var(--font-size-sm);
-  text-decoration: underline;
+    font-weight: var(--font-size-sm);
+    text-decoration: underline;
+    color: var(--color-text-primary);
+    transition: color 0.2s;
+}
+
+.contact-email:hover {
+    color: var(--color-accent-red);
 }
 
 .contact-item {
@@ -475,10 +499,11 @@
   padding: 0.9rem 2.5rem;
   border-radius: 999px;
   border: none;
-  background: #5B6785;
+  background: var(--color-mud-purple);
   color: white;
-  font-size: 1rem;
+  font-size: var(--font-size-base);
   cursor: pointer;
+  margin-top: var(--space-lg);
 }
 
 .contact-form input:focus,
