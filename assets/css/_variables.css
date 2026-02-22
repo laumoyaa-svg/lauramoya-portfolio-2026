@@ -15,6 +15,7 @@
 
 	/* ===== COLOR SYSTEM ===== */
 	/* Color Palette */
+	--color-white: #ffffff;
 	--color-light-beige: #fdf6f1;
 	--color-dark-grey: #131313;
 	--color-light-purple: #f6efff;
@@ -27,7 +28,7 @@
 	--color-primary-hover: var(--color-light-purple);
 	--color-primary-light: #3b82f6;
 	--color-primary-dark: #1e3a8a;
-	--color-light: #ffffff;
+	--color-light: var(--color-white);
 
 	/* Neutral colors for text and backgrounds */
 	--color-text-primary: var(--color-dark-grey);
@@ -36,10 +37,10 @@
 	--color-text-accent: var(--color-dark-red);
 
 	/* Background colors */
-	--color-bg: var(--color-light); /* var(--color-light-beige);*/
-	--color-bg-light: ##faf6f3;
-	--color-bg-secondary: #f6efff;
-	--color-bg-dark: #0f172a;
+	--color-bg: var(--color-light);
+	--color-bg-light:  var(--color-light-beige);
+	--color-bg-secondary: var(--color-light-purple);
+	--color-bg-dark: var(--color-dark-grey);
 
 	/* Border colors */
 	--color-border-light: #e2e8f0;
@@ -132,7 +133,7 @@
 	--gradient-beige-light-purple: linear-gradient(180deg,rgba(253, 246, 241, 1) 0%, rgba(246, 239, 255, 1) 45%);
 	--gradient-white-light-purple: linear-gradient(180deg,rgba(255, 255, 255, 1) 0%, rgba(246, 239, 255, 1) 32%);
 	--gradient-circle-white-beige: radial-gradient(circle,rgba(255, 255, 255, 1) 0%, rgba(253, 246, 241, 1) 74%);
-
+	--gradient-light-purple-light-beige: linear-gradient(180deg,rgba(246, 239, 255, 1) 41%, rgba(253, 246, 241, 1) 82%);
 
 	/* ===== SCROLLYTELLING COLORS ===== */
 	--color-accent-blue: #3498db;
@@ -141,6 +142,9 @@
 	--color-overlay-dark: rgba(0, 0, 0, 0.4);
 	--color-card-bg: rgba(255, 255, 255, 0.05);
 	--color-card-border: rgba(255, 255, 255, 0.1);
+
+	/* ===== OPACITY SETTINGS ===== */
+	--opacity-mild: 0.7;
 }
 
 /* ============================================
