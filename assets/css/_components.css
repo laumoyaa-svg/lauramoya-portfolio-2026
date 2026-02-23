@@ -231,11 +231,11 @@ nav a.active {
   border-radius: var(--radius-lg);
   padding: var(--space-xl);
   transition: all var(--transition-base);
+  box-shadow: var(--shadow-md);
 }
 
 .card:hover {
   box-shadow: var(--shadow-lg);
-  transform: translateY(-4px);
   border-color: var(--color-border-medium);
 }
 

@@ -170,13 +170,14 @@
 }
 
 .chapter-3 {
-    background: var(--color-accent-green);
+    background: var(--gradient-beige-light-purple);
 }
 
 .chapter-3 h2 {
-    color: var(--color-accent-green);
+    color: var(--color-text-accent);
     font-size: var(--font-size-3xl);
     margin-bottom: var(--space-md);
+    text-align: center;
 }
 
 /* ===== STATISTICS DISPLAY ===== */
@@ -262,6 +263,13 @@
     margin: var(--space-3xl) 0;
 }
 
+.interactive-cards--row {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: var(--space-lg);
+    align-items: start;
+}
+
 .card {
     background: var(--color-card-bg);
     border: 1px solid var(--color-card-border);
@@ -283,9 +291,6 @@
 .card:nth-child(2) {
     transition-delay: 0.3s;
 }
-.card:nth-child(3) {
-    transition-delay: 0.5s;
-}
 
 .card:hover {
     background: rgba(255, 255, 255, 0.1);
@@ -293,9 +298,24 @@
 }
 
 .card h4 {
-    color: var(--color-accent-blue);
-    margin-bottom: var(--space-sm);
+    color: var(--color-text-secondary);
+    margin-bottom: var(--space-md);
     font-size: var(--font-size-xl);
+}
+
+.card ul {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 var(--space-md) 0;
+}
+
+.card li {
+  margin-bottom: var(--space-xs);
+}
+
+.card li::before {
+  content: "• ";
+  color: var(--color-text-secondary);
 }
 
 /* ===== TIMELINE ===== */
