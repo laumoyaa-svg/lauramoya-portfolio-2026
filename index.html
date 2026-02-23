@@ -19,18 +19,7 @@
 
 <body id="top">
 	<!-- Header Section -->
-	<header class="site-header">
-		<div class="header-container">
-			<h4 class="header-title"><a href="#top">Laura Moya</a></h4>
-			<nav class="header-nav">
-				<ul class="nav-list">
-					<li><a href="#about" class="menu-item menu-item-about">ABOUT</a></li>
-					<li><a href="#projects" class="menu-item menu-item-projects">PROJECTS</a></li>
-					<li><a href="#contact" class="menu-item menu-item-contact">CONTACT</a></li>
-				</ul>
-			</nav>
-		</div>
-	</header>
+	<div data-include-header></div>
 
 	<!-- Hero Section -->
 	<div class="hero">
@@ -67,35 +56,31 @@
 		<!-- Parallax Section -->
 		<div class="parallax-section">
 			<div class="parallax-content">
-				<h3>El Arte de Contar Historias Visuales</h3>
-				<p class="text-large">Cada trazo tiene un propósito</p>
+				<h3>Every Image Tells a Story...</h3>
 			</div>
 		</div>
 
-		<!-- Chapter 2: My Work -->
+		<!-- Chapter 2: Projects -->
 		<section id="projects" class="story-section chapter-2" data-observe>
 			<div class="story-content">
-				<h2>Mi Trabajo</h2>
-				<p class="text-large mb-lg">Me especializo en varias áreas de ilustración:</p>
+				<h2>Projects</h2>
 
-				<div class="interactive-cards">
-					<div class="card">
-						<h4>Editorial</h4>
-						<p>Ilustraciones para revistas, libros y publicaciones digitales que capturan la esencia de cada
-							historia.</p>
+				<div class="interactive-cards project-cards">
+					<div id="editorial" class="project-card accent-color">
+						<a href="editorial/index.html">
+							<h3 class="project-card-title">Editorial</h3>
+						</a>
+						<img src="https://ik.imagekit.io/lauramoya/images/ghosts.webp" alt="Editorial project" />
 					</div>
-					<div class="card">
-						<h4>Branding</h4>
-						<p>Identidades visuales únicas que ayudan a las marcas a conectar emocionalmente con su
-							audiencia.</p>
-					</div>
-					<div class="card">
-						<h4>Digital</h4>
-						<p>Arte conceptual y diseño de personajes para videojuegos, animación y medios interactivos.</p>
+					<div id="educational" class="project-card accent-color">
+						<a href="educational/index.html">
+							<h3 class="project-card-title">Educational</h3>
+						</a>
+						<img src="https://ik.imagekit.io/lauramoya/images/pm4i_conferencepanel_3.webp"
+							alt="Educational project" />
 					</div>
 				</div>
 
-				<p class="mt-lg">Cada proyecto es una oportunidad para explorar nuevas técnicas y estilos visuales.</p>
 			</div>
 		</section>
 
@@ -217,35 +202,7 @@
 		<!--<div class="info-overlay">
 			<div>Progreso: <strong><span id="progress">0</span>%</strong></div>
 		</div>-->
-		<footer class="site-footer">
-			<div class="footer-content">
-				<div class="footer-social">
-
-					<a href="https://www.instagram.com/visualjourneys/" target="_blank" rel="noopener">
-						<img src="assets/images/instagram.svg" alt="Instagram">
-					</a>
-
-					<a href="https://www.behance.net/visualjourneys" target="_blank" rel="noopener">
-						<img src="assets/images/behance.svg" alt="Behance">
-					</a>
-
-					<a href="https://www.linkedin.com/in/lauramoyaaraujo/?locale=en_US" target="_blank" rel="noopener">
-						<img src="assets/images/linkedin.svg" alt="LinkedIn">
-					</a>
-
-					<a href="#contact">
-						<img src="assets/images/mail.svg" alt="Contact">
-					</a>
-
-				</div>
-
-				<p class="footer-copy">
-					© 2026 Laura Moya. All rights reserved.
-				</p>
-
-			</div>
-
-		</footer>
+		<div data-include-footer></div>
 
 		<script src="./assets/js/main.js"></script>
 </body>
