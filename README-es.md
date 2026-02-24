@@ -1,3 +1,5 @@
+https://laumoyaa-svg.github.io/lauramoya-portfolio-2026/
+
 # WEB ATELIER (UDIT) – Plantilla de Proyecto Estudiantil
 
 _Critical Coding for a Better Living._
@@ -41,31 +43,51 @@ Este repositorio es el **punto de partida para el proyecto personal de cada estu
 ## Estructura del Repositorio
 
 ```plaintext
-student-project-template/
-├── index.html              # Página principal (HTML semántico)
+laura-project-template-v2/
+├── index.html               # Página principal (portfolio)
+├── 404.html                 # Página de error para GitHub Pages
 ├── assets/
 │   ├── css/
-│   │   ├── style.css       # Entrada principal (importa parciales)
-│   │   ├── _variables.css  # Tokens de diseño
-│   │   ├── _reset.css      # Reset del navegador
-│   │   ├── _base.css       # Tipografía, enlaces
-│   │   ├── _layout.css     # Contenedores, grids
-│   │   ├── _components.css # Header, footer, botones, cards
-│   │   ├── _utilities.css  # Clases auxiliares
+│   │   ├── style.css        # Entrada principal (importa parciales)
+│   │   ├── _variables.css   # Tokens de diseño (colores, tamaños, etc.)
+│   │   ├── _reset.css       # Reset del navegador
+│   │   ├── _base.css        # Tipografía, enlaces
+│   │   ├── _layout.css      # Contenedores, grids y main
+│   │   ├── _components.css  # Header, footer, botones, cards
+│   │   ├── _scrollytelling.css # Secciones hero, capítulos y efectos de scroll
+│   │   ├── _utilities.css   # Clases auxiliares
 │   │   ├── _accessibility.css
 │   │   ├── _responsive.css
 │   │   └── _print.css
-│   └── js/
-│       └── main.js         # Funcionalidad JavaScript
-├── images/                 # Imágenes (mantener optimizadas)
-├── project.yaml            # Metadatos del proyecto (Semana 4)
-├── project-brief.md        # Definición del proyecto (Semana 2)
-├── project-inspiration.md  # Referencias y moodboard
-├── GETTING-STARTED.md      # Guía de inicio y metodología
-├── README-es.md            # Guía y registro semanal
-├── .nojekyll               # Evita conflictos con Jekyll
-└── .github/workflows/
-    └── critical.yml        # Comprobaciones CI/CD
+│   ├── js/
+│   │   └── main.js          # Funcionalidad JS (header/footer compartidos, scroll, etc.)
+│   ├── images/              # Imágenes del sitio
+│   ├── partials/            # Fragmentos HTML reutilizables
+│   │   ├── header.html      # Cabecera compartida
+│   │   └── footer.html      # Pie de página compartido
+│   └── portfolio/           # Contenido de portfolio (bio, statement, etc.)
+├── editorial/
+│   └── index.html           # Página de proyectos editoriales
+├── educational/
+│   └── index.html           # Página de proyectos educativos
+├── projects/                # Sección de proyectos (por ahora vacía)
+├── ejemplos/
+│   └── index.html           # Página de ejemplo de la plantilla
+├── docs/                    # Documentación y ejemplos de metodología
+│   ├── AI-METHODOLOGY-REMINDER.md
+│   ├── ejemplo-contexto-archivos.md
+│   ├── ejemplo-navegacion.md
+│   └── ejemplo-prompt-portfolio-challenge.md
+├── GETTING-STARTED.md       # Guía de inicio y metodología
+├── project-brief.md         # Definición del proyecto
+├── project-inspiration.md   # Referencias e inspiración
+├── project.yaml             # Metadatos del proyecto
+├── README-es.md             # Guía y registro semanal
+├── README.md                # README principal (en inglés)
+├── LICENSE-CODE             # Licencia para el código
+├── LICENSE-CONTENT          # Licencia para el contenido
+├── .nojekyll                # Evita conflictos con Jekyll en GitHub Pages
+└── package.json             # Dependencias y scripts del proyecto (si se usan)
 ```
 
 ## Flujo en la Práctica
