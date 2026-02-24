@@ -380,9 +380,11 @@
 
 .parallax-content h3 {
   position: relative;
-  z-index: 5;
-  font-size: var(--font-size-3xl);
+  z-index: 4;
+  font-size: var(--font-size-2xl);
   margin-bottom: var(--space-md);
+  font-style: italic;
+  color: var(--color-mud-purple);
 }
 
 .character {
