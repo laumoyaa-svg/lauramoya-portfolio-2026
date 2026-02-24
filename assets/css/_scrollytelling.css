@@ -403,6 +403,7 @@
   opacity: 0.4;
 }
 
+/* TODO: fix when hovers, text becomes green */   
 .project-card:hover .project-card-title {
   opacity: 1;
 }
