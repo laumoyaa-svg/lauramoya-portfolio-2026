@@ -164,8 +164,14 @@ nav a.active {
 .footer-copy {
   margin-top: var(--space-2xl);
   font-size: var(--font-size-xs);
-  margin-bottom: var(--space-2xl);
   opacity: var(--opacity-mild);
+}
+
+.url-footer a {
+  margin: var(--space-sm);
+  font-size: var(--font-size-xs);
+  color: var(--color-text-primary);
+  text-decoration: none;
 }
 
 @media (max-width: 768px) {
