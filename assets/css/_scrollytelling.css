@@ -117,7 +117,7 @@
 }
 
 .chapter-2 {
-  background: var(--gradient-chapter-2);
+  background: var(--color-light-purple);
 }
 
 .chapter-2 h2 {
@@ -349,7 +349,11 @@
 /* ===== PARALLAX SECTION ===== */
 .parallax-section {
   height: 60vh;
+  /* Original SVG background image kept for reference:
   background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 600"><defs><linearGradient id="grad" x1="0%" y1="0%" x2="100%" y2="100%"><stop offset="0%" style="stop-color:%23667eea;stop-opacity:1" /><stop offset="100%" style="stop-color:%23764ba2;stop-opacity:1" /></linearGradient></defs><rect fill="url(%23grad)" width="1200" height="600"/><circle cx="600" cy="300" r="200" fill="white" opacity="0.1"/><circle cx="300" cy="400" r="150" fill="white" opacity="0.05"/><circle cx="900" cy="200" r="180" fill="white" opacity="0.08"/></svg>');
+  */
+  /*background: var(--gradient-beige-light-purple);*/
+  background: var(--gradient-dark-red-light-purple);
   background-attachment: fixed;
   background-position: center;
   background-size: cover;
@@ -357,13 +361,14 @@
   align-items: center;
   justify-content: center;
   position: relative;
+  overflow: hidden;
 }
 
 .parallax-section::before {
   content: "";
   position: absolute;
   inset: 0;
-  background: var(--color-overlay-dark);
+  /*background: var(--color-overlay-dark); */
 }
 
 .parallax-content {
@@ -374,8 +379,88 @@
 }
 
 .parallax-content h3 {
+  position: relative;
+  z-index: 5;
   font-size: var(--font-size-3xl);
   margin-bottom: var(--space-md);
+}
+
+.character {
+  position: absolute;
+  height: auto;
+}
+
+.fox {
+  top: 10%;
+  right: 30%;
+  z-index: 2;
+  width: clamp(200px, 15vw, 300px);
+  animation: float 6s ease-in-out infinite;
+  opacity: 0.8;
+}
+
+.llama {
+  bottom: 12%;
+  left: 10%;
+  z-index: 2;
+  width: clamp(
+    90px,
+    13vw,
+    220px
+  ); /*Minimum 120px, preferred 15% viewport, 300px max*/
+  animation: float 7s ease-in-out infinite;
+  opacity: 0.7;
+}
+
+.donkey {
+  bottom: 5%;
+  right: 9%;
+  z-index: 1;
+  width: clamp(
+    80px,
+    10vw,
+    200px
+  ); /*Minimum 120px, preferred 15% viewport, 300px max*/
+  animation: float 8s ease-in-out infinite;
+  opacity: 0.8;
+}
+
+@keyframes float {
+  0% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-12px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
+
+@media (max-width: 768px) {
+  .character {
+    width: 120px;
+  }
+
+  #llama,
+  #donkey {
+    width: 90px;
+  }
+
+  .fox {
+    top: 5%;
+    right: 5%;
+  }
+
+  .llama {
+    bottom: 20%;
+    left: 5%;
+  }
+
+  .donkey {
+    bottom: 5%;
+    right: 5%;
+  }
 }
 
 /* ===== INTERACTIVE CARDS ===== */

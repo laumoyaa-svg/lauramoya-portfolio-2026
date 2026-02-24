@@ -20,9 +20,9 @@
   /* Content width factors for main content. Original value: 800px */
   --content-width-factor-l: 0.96;
   --content-width-factor-full: 1;
-  --content-width-factor-wide: 1.1; 
+  --content-width-factor-wide: 1.1;
   --content-width-factor-editorial: 1.2;
-  
+
   /* ===== COLOR SYSTEM ===== */
   /* Color Palette */
   --color-white: #ffffff;
@@ -198,6 +198,8 @@
     rgba(253, 246, 241, 1) 82%
   );
 
+  --gradient-dark-red-light-purple: linear-gradient(135deg, #de4524, #f6efff);
+
   /* ===== SCROLLYTELLING COLORS ===== */
   --color-accent-blue: #3498db;
   --color-accent-red: #e74c3c;
@@ -207,7 +209,6 @@
   --color-card-border: rgba(255, 255, 255, 0.1);
   --color-overlay-mud-purple: rgba(76, 55, 97, 0.4);
   --color-slider-bg: rgba(246, 239, 255, 0.4);
-  
 
   /* ===== OPACITY SETTINGS ===== */
   --opacity-mild: 0.7;
