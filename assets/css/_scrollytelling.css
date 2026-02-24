@@ -104,8 +104,43 @@
   transform: translateY(0);
 }
 
+/* ===== CHAPTER THEMES ===== */
+.chapter-1 {
+  padding-top: 0;
+  background: var(--gradient-white-light-purple);
+}
+
+.chapter-1 h2 {
+  color: var(--color-text-accent);
+  font-size: var(--font-size-3xl);
+  margin-bottom: var(--space-4xl);
+}
+
+.chapter-2 {
+  background: var(--gradient-chapter-2);
+}
+
+.chapter-2 h2 {
+  color: var(--color-text-secondary);
+  font-size: var(--font-size-3xl);
+  margin-bottom: var(--space-lg);
+  text-align: center;
+}
+
+.chapter-3 {
+  background: var(--gradient-beige-light-purple);
+}
+
+.chapter-3 h2 {
+  color: var(--color-text-accent);
+  font-size: var(--font-size-3xl);
+  margin-bottom: var(--space-md);
+  text-align: center;
+}
+
+
 .story-content {
-  max-width: 800px;
+  max-width: calc(var(--max-width) * var(--content-width-factor-wide));
   z-index: var(--z-base);
   position: relative;
 }
@@ -143,8 +178,14 @@
   .about-row {
     grid-template-columns: 1fr;
   }
+  .about-image {
+    display: flex;
+    justify-content: center;
+  }
   .about-image img {
-    height: 300px;
+    width: min(60vw, 260px);
+    height: min(60vw, 260px);
+    border-radius: var(--radius-full);
   }
 }
 
@@ -153,40 +194,6 @@
   line-height: var(--line-height-relaxed);
   font-family: var(--font-family-base);
   color: var(--color-text-primary);
-}
-
-/* ===== CHAPTER THEMES ===== */
-.chapter-1 {
-  padding-top: 0;
-  background: var(--gradient-white-light-purple);
-}
-
-.chapter-1 h2 {
-  color: var(--color-text-accent);
-  font-size: var(--font-size-3xl);
-  margin-bottom: var(--space-4xl);
-}
-
-.chapter-2 {
-  background: var(--gradient-chapter-2);
-}
-
-.chapter-2 h2 {
-  color: var(--color-text-secondary);
-  font-size: var(--font-size-3xl);
-  margin-bottom: var(--space-lg);
-  text-align: center;
-}
-
-.chapter-3 {
-  background: var(--gradient-beige-light-purple);
-}
-
-.chapter-3 h2 {
-  color: var(--color-text-accent);
-  font-size: var(--font-size-3xl);
-  margin-bottom: var(--space-md);
-  text-align: center;
 }
 
 /* ===== STATISTICS DISPLAY ===== */
@@ -380,7 +387,6 @@
   text-align: center;
   color: var(--color-text-primary);
   /*background: rgba(0, 0, 0, 0.5);*/
-  z-index: 1;
   opacity: 0;
   transition: opacity 0.3s ease;
 }
