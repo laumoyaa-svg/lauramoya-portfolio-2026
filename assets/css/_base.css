@@ -45,6 +45,10 @@ h1 {
 h2 {
 	font-size: var(--font-size-3xl);
 }
+
+.page-404 h2 {
+	color: var(--color-text-accent);
+}
 h3 {
 	font-size: var(--font-size-2xl);
 }

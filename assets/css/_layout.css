@@ -34,6 +34,16 @@ main {
 	padding-top: 0;
 }
 
+/* 404 page layout */
+.page-404 {
+	background-color: var(--color-light-beige);
+}
+
+.page-404 main {
+	padding-top: 4rem;
+	text-align: center;
+}
+
 /* ===== GRID LAYOUTS ===== */
 .grid {
 	display: grid;
