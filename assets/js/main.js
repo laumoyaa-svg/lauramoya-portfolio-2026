@@ -12,9 +12,12 @@
 
 // ===== SHARED HEADER TEMPLATE LOADER =====
 function getBasePath() {
-	// Detect if we're in a subfolder like /educational/ or /editorial/
+	// Detect if we're in a subfolder like /educational/, /editorial/ or /projects/
 	const path = window.location.pathname;
-	const inSubpage = path.includes('/educational/') || path.includes('/editorial/');
+	const inSubpage =
+		path.includes('/educational/') ||
+		path.includes('/editorial/') ||
+		path.includes('/projects/');
 	return inSubpage ? '..' : '.';
 }
 
@@ -208,3 +211,54 @@ if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
 
 console.log('✅ Scrollytelling initialized');
 console.log(`📊 Observing ${document.querySelectorAll('[data-observe]').length} sections`);
+
+// ===== PROJECT CARD CLICK BEHAVIOR =====
+// Make the whole project card clickable, not just the inner link
+function setupProjectCardClicks() {
+	const editorialCard = document.getElementById('editorial');
+	const educationalCard = document.getElementById('educational');
+
+	if (editorialCard) {
+		editorialCard.style.cursor = 'pointer';
+		editorialCard.addEventListener('click', (event) => {
+			// Let native link clicks behave normally
+			const tag = event.target.tagName.toLowerCase();
+			if (tag === 'a' || tag === 'button') return;
+			window.location.href = 'editorial/index.html';
+		});
+	}
+
+	if (educationalCard) {
+		educationalCard.style.cursor = 'pointer';
+		educationalCard.addEventListener('click', (event) => {
+			const tag = event.target.tagName.toLowerCase();
+			if (tag === 'a' || tag === 'button') return;
+			window.location.href = 'educational/index.html';
+		});
+	}
+}
+
+setupProjectCardClicks();
+
+document.querySelectorAll(".slider").forEach(slider => {
+  const slides = slider.querySelectorAll(".slide");
+  const next = slider.querySelector(".next");
+  const prev = slider.querySelector(".prev");
+
+  let index = 0;
+
+  function showSlide(i) {
+    slides.forEach(slide => slide.classList.remove("active"));
+    slides[i].classList.add("active");
+  }
+
+  next.addEventListener("click", () => {
+    index = (index + 1) % slides.length;
+    showSlide(index);
+  });
+
+  prev.addEventListener("click", () => {
+    index = (index - 1 + slides.length) % slides.length;
+    showSlide(index);
+  });
+});

@@ -21,6 +21,7 @@
   --content-width-factor-l: 0.96;
   --content-width-factor-full: 1;
   --content-width-factor-wide: 1.1; 
+  --content-width-factor-editorial: 1.2;
   
   /* ===== COLOR SYSTEM ===== */
   /* Color Palette */
@@ -205,6 +206,8 @@
   --color-card-bg: rgba(255, 255, 255, 0.05);
   --color-card-border: rgba(255, 255, 255, 0.1);
   --color-overlay-mud-purple: rgba(76, 55, 97, 0.4);
+  --color-slider-bg: rgba(246, 239, 255, 0.4);
+  
 
   /* ===== OPACITY SETTINGS ===== */
   --opacity-mild: 0.7;

@@ -29,6 +29,11 @@ main {
 	padding: var(--space-3xl) 0 0;
 }
 
+/* Editorial page: no top padding between header and main */
+.page-editorial main {
+	padding-top: 0;
+}
+
 /* ===== GRID LAYOUTS ===== */
 .grid {
 	display: grid;

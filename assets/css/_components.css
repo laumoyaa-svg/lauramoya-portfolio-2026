@@ -24,6 +24,11 @@
   background-color: var(--color-light-beige);
 }
 
+/* Editorial page: header is always light beige */
+.page-editorial .site-header {
+  background-color: var(--color-light-beige);
+}
+
 /* TODO: remove or design Dark Mode */
 .dark-mode .site-header {
   background-color: rgba(30, 41, 59, 0.9);
