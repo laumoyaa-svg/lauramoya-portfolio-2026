@@ -259,6 +259,51 @@ if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
 	console.log('Reduced motion preference detected - animations disabled');
 }
 
+// ===== BACK TO TOP BUTTON VISIBILITY =====
+// Appears after the hero / first main section
+
+const backToTopButton = document.createElement('button');
+backToTopButton.className = 'back-to-top';
+backToTopButton.type = 'button';
+backToTopButton.setAttribute('aria-label', 'Back to top');
+backToTopButton.innerHTML = '<span>↑</span>';
+
+document.body.appendChild(backToTopButton);
+backToTopButton.addEventListener('click', scrollToTop);
+
+function getBackToTopTriggerOffset() {
+	const hero = document.querySelector('.hero');
+	if (hero) {
+		return hero.offsetHeight;
+	}
+
+	const primarySection =
+		document.getElementById('about') ||
+		document.querySelector('.story-section') ||
+		document.querySelector('.editorial-project') ||
+		document.querySelector('.educational-project');
+
+	if (primarySection) {
+		return primarySection.offsetTop;
+	}
+
+	return window.innerHeight;
+}
+
+function updateBackToTopVisibility() {
+	if (!backToTopButton) return;
+
+	const triggerOffset = getBackToTopTriggerOffset();
+	if (window.scrollY > triggerOffset) {
+		backToTopButton.classList.add('back-to-top--visible');
+	} else {
+		backToTopButton.classList.remove('back-to-top--visible');
+	}
+}
+
+window.addEventListener('scroll', updateBackToTopVisibility);
+updateBackToTopVisibility();
+
 // ===== CONSOLE LOG FOR DEBUGGING =====
 // PEDAGOGICAL NOTE: Helpful during development, remove in production
 
