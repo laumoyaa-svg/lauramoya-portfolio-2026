@@ -73,15 +73,14 @@ Icono hamburguesa (☰):
 ┌─────────────────────────────────────┐
 │                                  ✕  │ ← Close button
 │                                     │
-│            Inicio                   │
+│       Top of the Page               │
 │                                     │
-│          Portfolio                  │
+│          About                      │
 │                                     │
-│          Sobre Mí                   │
+│          Projects                   │
 │                                     │
-│          Proceso                    │
+│          Contact                    │
 │                                     │
-│          Contacto                   │
 │                                     │
 └─────────────────────────────────────┘
     Full-screen overlay

@@ -49,6 +49,15 @@ function loadSharedHeader() {
 				homeLink.setAttribute('href', homeHref);
 			});
 
+			// Links to dedicated project subpages (Editorial / Educational)
+			host.querySelectorAll('[data-nav-page]').forEach((link) => {
+				const page = link.getAttribute('data-nav-page');
+				if (!page) return;
+
+				const href = `${basePath}/${page}/index.html`;
+				link.setAttribute('href', href);
+			});
+
 			// Mobile hamburger → overlay menu behavior
 			const toggleButton = host.querySelector('#navbar-toggle');
 			const closeButton = host.querySelector('#navbar-close');
