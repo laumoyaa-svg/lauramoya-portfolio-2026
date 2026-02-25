@@ -150,7 +150,7 @@ A portfolio website highlighting my most recent work in the two of the three cat
 **Who is this for?**
 Publishing houses and editorial clients, especially those working with children’s illustration, books and narrative visual content.
 
-Cultural organisations, museums, heritage projects and creative institutions that need illustration to communicate stories, knowledge and cultural information.
+Cultural organisations, museums, heritage projects and creative institutions that need illustration to communicate stories, knowledge and cultural/scientific information.
 
 Clients interested in traditional and analogue illustration, particularly for travel-related storytelling, heritage documentation and observational drawing using watercolour and pencil techniques.
 

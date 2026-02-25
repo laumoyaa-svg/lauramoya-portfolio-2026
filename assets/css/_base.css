@@ -71,6 +71,15 @@ p {
 	color: var(--color-text-secondary);
 }
 
+/* About section external link styling */
+.about-text a {
+	color: var(--color-text-secondary);
+}
+
+.about-text a:hover {
+	color: var(--color-text-accent);
+}
+
 ul,
 ol {
 	margin-bottom: var(--space-md);
