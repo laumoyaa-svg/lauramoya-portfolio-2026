@@ -33,8 +33,8 @@ function loadSharedHeader() {
 		.then((html) => {
 			host.innerHTML = html;
 
-			// Wire up nav links based on where we are
-			document.querySelectorAll('.header-nav [data-nav-target]').forEach((link) => {
+			// Wire up nav links (desktop + mobile overlay) based on where we are
+			host.querySelectorAll('[data-nav-target]').forEach((link) => {
 				const target = link.getAttribute('data-nav-target');
 				if (!target) return;
 
@@ -43,11 +43,55 @@ function loadSharedHeader() {
 				link.setAttribute('href', href);
 			});
 
-			// goes to home/top when clicking my name
-			const homeLink = document.querySelector('.header-title [data-nav-home]');
-			if (homeLink) {
+			// goes to home/top when clicking my name or "Top of the Page" in overlay
+			host.querySelectorAll('[data-nav-home]').forEach((homeLink) => {
 				const homeHref = basePath === '.' ? '#top' : `${basePath}/index.html#top`;
 				homeLink.setAttribute('href', homeHref);
+			});
+
+			// Mobile hamburger → overlay menu behavior
+			const toggleButton = host.querySelector('#navbar-toggle');
+			const closeButton = host.querySelector('#navbar-close');
+			const overlay = host.querySelector('#navbar-menu');
+
+			if (toggleButton && overlay) {
+				const openMenu = () => {
+					overlay.classList.add('active');
+					overlay.setAttribute('aria-hidden', 'false');
+					toggleButton.setAttribute('aria-expanded', 'true');
+					document.body.style.overflow = 'hidden';
+				};
+
+				const closeMenu = () => {
+					overlay.classList.remove('active');
+					overlay.setAttribute('aria-hidden', 'true');
+					toggleButton.setAttribute('aria-expanded', 'false');
+					document.body.style.overflow = '';
+				};
+
+				toggleButton.addEventListener('click', () => {
+					if (overlay.classList.contains('active')) {
+						closeMenu();
+					} else {
+						openMenu();
+					}
+				});
+
+				if (closeButton) {
+					closeButton.addEventListener('click', closeMenu);
+				}
+
+				// Close menu when clicking any overlay link
+				overlay.querySelectorAll('a').forEach((link) => {
+					link.addEventListener('click', closeMenu);
+				});
+
+				// Close on ESC key
+				document.addEventListener('keydown', (event) => {
+					if (event.key === 'Escape' && overlay.classList.contains('active')) {
+						closeMenu();
+					}
+				});
 			}
 		})
 		.catch((error) => {
