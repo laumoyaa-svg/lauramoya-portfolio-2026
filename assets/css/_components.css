@@ -29,6 +29,11 @@
   background-color: var(--color-light-beige);
 }
 
+/* Educational page: header is always light purple */
+.page-educational .site-header {
+  background-color: var(--color-light-purple);
+}
+
 /* TODO: remove or design Dark Mode */
 .dark-mode .site-header {
   background-color: rgba(30, 41, 59, 0.9);

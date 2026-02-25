@@ -34,6 +34,11 @@ main {
 	padding-top: 0;
 }
 
+/* Educational page: no top padding between header and main */
+.page-educational main {
+	padding-top: 0;
+}
+
 /* 404 page layout */
 .page-404 {
 	background-color: var(--color-light-beige);
