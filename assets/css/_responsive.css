@@ -8,6 +8,55 @@
    ============================================ */
 
 @media (max-width: 768px) {
+	main {
+		padding-top: 0;
+	}
+
+	/* Hero & scrollytelling sections (mobile overrides from _scrollytelling.css) */
+	.hero {
+		min-height: auto;
+		height: 60vh;
+		overflow: hidden;
+		margin-top: calc(-1 * var(--space-xl)); /* pull hero up under header */
+		margin-bottom: var(--space-xs);
+	}
+
+	.hero-image {
+		position: relative;
+		width: 100%;
+		height: 100%;
+		object-fit: cover;
+		object-position: top center;
+		transform: none;
+		-webkit-mask-image: none;
+		mask-image: none;
+	}
+
+	.story-section {
+		min-height: auto;
+		align-items: flex-start;
+		margin-top: 0;
+	}
+
+	#contact.story-section {
+		padding: 0;
+	}
+
+	#contact-content {
+		max-width: 100%;
+		width: 100%;
+		padding-inline: var(--space-xl);
+	}
+
+	.contact-container {
+		max-width: 100%;
+	}
+
+	#about.story-section {
+		padding-top: 0;
+		margin-top: 0;
+	}
+
 	.header-content {
 		flex-direction: column;
 		align-items: flex-start;
@@ -39,5 +88,16 @@
 	.grid-3,
 	.grid-4 {
 		grid-template-columns: repeat(2, 1fr);
+	}
+}
+
+@media (max-width: 1024px) {
+	/* Contact chapter tablet / small-desktop adjustments (moved from _scrollytelling.css) */
+	.chapter-contact .story-content {
+		max-width: calc(var(--max-width) * 1.1);
+	}
+
+	.contact-container {
+		gap: var(--space-3xl);
 	}
 }
