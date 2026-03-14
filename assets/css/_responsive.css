@@ -38,6 +38,23 @@
     margin-top: 0;
   }
 
+  /* Lightbox adjustments for small screens */
+  .lightbox-content {
+    max-width: 94vw;
+    max-height: 80vh;
+  }
+
+  .lightbox-image {
+    max-height: 80vh;
+  }
+
+  .lightbox-close {
+    top: var(--space-sm);
+    right: var(--space-sm);
+    width: 2.25rem;
+    height: 2.25rem;
+  }
+
   /* Skills section: make cards behave like project cards on mobile */
   #skills .interactive-cards--row {
     grid-template-columns: 1fr;

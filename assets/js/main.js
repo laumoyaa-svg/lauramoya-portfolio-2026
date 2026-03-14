@@ -360,3 +360,71 @@ document.querySelectorAll(".slider").forEach(slider => {
     showSlide(index);
   });
 });
+
+// ===== IMAGE LIGHTBOX (EDITORIAL / EDUCATIONAL) =====
+// Click on slider images or the "Next Project" image to see a larger version
+
+function setupImageLightbox() {
+	const clickableImages = document.querySelectorAll(
+		'.editorial-project .slides img, .educational-project .slides img, .edu-section-max-width-image img',
+	);
+
+	if (!clickableImages.length) return;
+
+	let overlay = null;
+
+	const closeLightbox = () => {
+		if (!overlay) return;
+		overlay.remove();
+		overlay = null;
+		document.body.style.overflow = '';
+		document.removeEventListener('keydown', handleKeyDown);
+	};
+
+	const handleKeyDown = (event) => {
+		if (event.key === 'Escape') {
+			closeLightbox();
+		}
+	};
+
+	const openLightbox = (img) => {
+		// Remove any existing overlay first
+		if (overlay) {
+			overlay.remove();
+		}
+
+		overlay = document.createElement('div');
+		overlay.className = 'lightbox';
+		overlay.innerHTML = `
+			<div class="lightbox-content">
+				<button class="lightbox-close" type="button" aria-label="Close image">
+					×
+				</button>
+				<img class="lightbox-image" src="${img.src}" alt="${img.alt || ''}">
+			</div>
+		`;
+
+		document.body.appendChild(overlay);
+		document.body.style.overflow = 'hidden';
+
+		const closeButton = overlay.querySelector('.lightbox-close');
+		if (closeButton) {
+			closeButton.addEventListener('click', closeLightbox);
+		}
+
+		overlay.addEventListener('click', (event) => {
+			if (event.target === overlay) {
+				closeLightbox();
+			}
+		});
+
+		document.addEventListener('keydown', handleKeyDown);
+	};
+
+	clickableImages.forEach((img) => {
+		img.style.cursor = 'zoom-in';
+		img.addEventListener('click', () => openLightbox(img));
+	});
+}
+
+setupImageLightbox();
