@@ -205,7 +205,17 @@
 .navbar-link--sub {
   font-size: var(--font-size-base);
   color: var(--color-text-secondary);
-  margin-left: var(--space-2xl);
+}
+
+.navbar-sublist {
+  list-style: none;
+  margin: var(--space-md) 0 0 0;
+  padding: 0 0 0 var(--space-2xl);
+  text-align: left;
+}
+
+.navbar-sublist .navbar-link--sub {
+  display: block;
 }
 
 nav ul {
