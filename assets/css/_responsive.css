@@ -38,12 +38,7 @@
     margin-top: 0;
   }
 
-  /* Skills section: match Projects layout on mobile */
-  #skills .story-content {
-    max-width: 100%;
-    padding-inline: var(--space-xl);
-  }
-
+  /* Skills section: make cards behave like project cards on mobile */
   #skills .interactive-cards--row {
     grid-template-columns: 1fr;
     gap: var(--space-xl);
@@ -51,6 +46,7 @@
 
   #skills .card {
     transform: none;
+    width: 100%;
   }
 
   #contact.story-section {
