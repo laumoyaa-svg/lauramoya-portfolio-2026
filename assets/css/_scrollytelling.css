@@ -392,6 +392,20 @@
 }
 
 @media (max-width: 768px) {
+  #skills .story-content {
+    max-width: 100%;
+    padding: 0 var(--space-xl);
+  }
+
+  #skills .interactive-cards--row {
+    grid-template-columns: 1fr;
+    gap: var(--space-xl);
+  }
+
+  #skills .card {
+    transform: none;
+  }
+
   .project-row {
     grid-template-columns: 1fr;
   }
