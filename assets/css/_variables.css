@@ -220,41 +220,4 @@
   static: it shows behind hero image*/
 }
 
-/* ============================================
-   DARK MODE VARIABLES
-   ============================================
-   PEDAGOGICAL NOTE: Override tokens for dark mode.
-   Same variable names, different values = theme switch.
-   ============================================ */
-
-/*TODO: hero image cannot be on black background, fix*/
-@media (prefers-color-scheme: dark) {
-  :root {
-    --color-text-primary: #f1f5f9;
-    --color-text-secondary: #cbd5e1;
-    --color-text-muted: #94a3b8;
-
-    --color-bg: #0f172a;
-    --color-bg-light: #1e293b;
-    --color-bg-dark: #020617;
-
-    --color-border-light: #334155;
-    --color-border-medium: #475569;
-    --color-border-dark: #64748b;
-  }
-}
-
-/* Manual dark mode toggle (add .dark-mode class to <html> or <body>) */
-.dark-mode {
-  --color-text-primary: #f1f5f9;
-  --color-text-secondary: #cbd5e1;
-  --color-text-muted: #94a3b8;
-
-  --color-bg: #0f172a;
-  --color-bg-light: #1e293b;
-  --color-bg-dark: #020617;
-
-  --color-border-light: #334155;
-  --color-border-medium: #475569;
-  --color-border-dark: #64748b;
-}
+/* (Dark mode variables removed – site now always uses the light theme) */

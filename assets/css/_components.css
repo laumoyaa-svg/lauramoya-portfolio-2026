@@ -34,11 +34,6 @@
   background-color: var(--color-light-purple);
 }
 
-/* TODO: remove or design Dark Mode */
-.dark-mode .site-header {
-  background-color: rgba(30, 41, 59, 0.9);
-}
-
 .header-container {
   /*max-width: var(--max-width);
 	margin-left: auto;
