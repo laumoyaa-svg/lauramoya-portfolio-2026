@@ -12,13 +12,13 @@
   --max-width: clamp(66ch, 2.5vw + 78ch, 104ch);
   --container-padding: clamp(1rem, 5vw, 3rem);
   --container-padding-narrow: clamp(
-    6rem,
+    1rem,
     5vw,
     3rem
   ); /* Adjusted for responsive padding */
 
   /* Mobile overlay menu */
-  --hamb-menu-max-width: clamp(14rem, 70vw, 20rem);
+  --hamb-menu-max-width: clamp(18rem, 88vw, 28rem);
 
   /* Content width factors for main content. Original value: 800px */
   --content-width-factor-l: 0.96;

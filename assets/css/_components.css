@@ -320,6 +320,7 @@ nav a.active {
   .header-container {
     align-items: center;
     flex-wrap: nowrap; /* keep title and hamburger on one row */
+    padding: 0 var(--space-lg);
   }
 
   .header-nav {
