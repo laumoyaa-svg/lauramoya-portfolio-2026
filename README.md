@@ -1,5 +1,5 @@
 🔗 Live site:  
-<a href="https://laumoyaa-svg.github.io/lauramoya-portfolio-2026/" target="_blank" rel="noopener noreferrer">https://laumoyaa-svg.github.io/lauramoya-portfolio-2026/</a>
+[https://laumoyaa-svg.github.io/lauramoya-portfolio-2026/](https://laumoyaa-svg.github.io/lauramoya-portfolio-2026/)
 
 ---
 
