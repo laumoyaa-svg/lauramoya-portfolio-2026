@@ -32,9 +32,8 @@ This document outlines the aesthetic intentions, mood, and visual references tha
 
 ## Points of Improvement
 The website is not well adapted to a mobile version. Efforts were made to make it responsive, and Copllot assistance didn't actually solve anything. 
-This issue will be reviewed and improved in future versions of the portfolio, since anyway the general layout is intended to change. 
+This issue will be reviewed and improved in future versions of the portfolio, since anyway the general layout is intended to change. The website doesn't offer different styling for Dark Mode yet.
 
-The website doesn't offer different styling for Dark Mode yet.
 ---
 
 ## Tech stack
