@@ -1,3 +1,7 @@
+# Laura Fernández de Moya  
+### Illustration Portfolio — 2026
+
+This repository contains the source code for my illustration portfolio website.
 🔗 Live site:  
 [https://laumoyaa-svg.github.io/lauramoya-portfolio-2026/](https://laumoyaa-svg.github.io/lauramoya-portfolio-2026/)
 
