@@ -17,6 +17,9 @@
     3rem
   ); /* Adjusted for responsive padding */
 
+  /* Mobile overlay menu */
+  --hamb-menu-max-width: clamp(14rem, 70vw, 20rem);
+
   /* Content width factors for main content. Original value: 800px */
   --content-width-factor-l: 0.96;
   --content-width-factor-full: 1;
