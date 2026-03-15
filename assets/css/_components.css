@@ -178,12 +178,6 @@
   align-items: flex-start;
   justify-content: left;
 }
-
-
-/* Hamburger menu: make all top-level items align the same, except the nested sub-projects list */
-#hamb-menu > li:not(#sub-projects) {
-  width: 100%;
-}
 .navbar-links {
   list-style: none;
   margin: 0;
